@@ -10,7 +10,7 @@
 <?php
 // define variables and set to empty values
 $nameErr = $companyErr = "";
-$name = $company = "";
+$name = $company = $leadcurrency = $leadstatus = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -59,7 +59,7 @@ function test_input($data) {
     <tr>
       <td>Lead Currency :</td> 
       <td>
-        <select name="lead currency">
+        <select name="lead currency" value="<?php echo $leadcurrency;?>">
           <option value="u.s.dollar">U.S. Dollar</option>
           <option value="euro">Euro</option>
         </select>
@@ -68,7 +68,7 @@ function test_input($data) {
     <tr>
       <td>Lead Status :</td> 
       <td>
-        <select name="lead status">
+        <select name="lead status" value="<?php echo $leadstatus;?>">
           <option value="open">Open</option>
           <option value="contacted">Contacted</option>
           <option value="qualified">Qualified</option>
@@ -83,6 +83,8 @@ function test_input($data) {
 <?php
 echo "<h2>Your Input:</h2>";
 echo $name;
+echo $company;
+echo lead currency;  
 ?>
 
 </body>
