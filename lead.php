@@ -1,7 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-?>
 <!DOCTYPE HTML>  
 <html>
 <head>
@@ -61,7 +57,7 @@ return $data;
 <tr>
   <td>Lead Currency :</td> 
   <td>
-    <select name="leadcurrency" value="leadcurrency">
+    <select name="lead currency" value="leadcurrency">
       <option value="u.s.dollar">U.S. Dollar</option>
       <option value="euro">Euro</option>
     </select>
@@ -70,7 +66,7 @@ return $data;
 <tr>
   <td>Lead Status :</td> 
   <td>
-    <select name="leadstatus" value="leadstatus">
+    <select name="lead status" value="leadstatus">
       <option value="open">Open</option>
       <option value="contacted">Contacted</option>
       <option value="qualified">Qualified</option>
@@ -82,20 +78,6 @@ return $data;
 <input type="submit" name="submit" value="Submit">  
 </form>
 
-<?php
-echo "<h2>Your Input:</h2>";
-echo "Name :";
-echo $name;
-<br>
-echo "Company :";
-echo $company;
-<br>
-echo "Lead Currency :";
-echo $leadcurrency;
-<br>
-echo "Lead Status :";
-echo $leadstatus;
-?>
-
+  
 </body>
 </html>
