@@ -77,15 +77,9 @@ return $data;
 </table>
 <input type="submit" name="submit" value="Submit">  
 </form>
-
- <?php
- $sql = 'INSERT INTO lead (Name,Company,CurrencyIsocode,Status) VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')';
-  $stmt = $pdo->prepare($sql);
-  $stmt->execute();
-  $rowCount = $stmt->rowCount();
-  $details = $stmt->fetch();
-  print_r ($details);
-  ?>
-  
 </body>
 </html>
+ <?php
+ $query = "INSERT INTO lead (Name,Company,CurrencyIsocode,Status) VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
+  $result= pg_query($query);
+  ?>
