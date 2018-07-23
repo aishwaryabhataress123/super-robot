@@ -49,10 +49,32 @@ function test_input($data) {
       <td> <input type="text" name="name" value="<?php echo $name;?>"></td>
       <td><span class="error">* <?php echo $nameErr;?></span></td>
     </tr>
+    <br><br>
     <tr>
       <td>Company:</td> 
       <td><input type="text" name="company" value="<?php echo $company;?>"></td>
       <td><span class="error">* <?php echo $companyErr;?></span></td>
+    </tr>
+    <br><br>
+    <tr>
+      <td>Lead Currency :</td> 
+      <td>
+        <select name="lead currency">
+          <option value="u.s.dollar">U.S. Dollar</option>
+          <option value="euro">Euro</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Lead Status :</td> 
+      <td>
+        <select name="lead status">
+          <option value="open">Open</option>
+          <option value="contacted">Contacted</option>
+          <option value="qualified">Qualified</option>
+          <option value="unqualified">Unqualified</option>
+        </select>
+      </td>
     </tr>
   </table>
   <input type="submit" name="submit" value="Submit">  
