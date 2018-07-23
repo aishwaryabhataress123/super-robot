@@ -42,13 +42,19 @@ function test_input($data) {
 ?>
 
 <p><span class="error">* required field</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  Company: <input type="text" name="company" value="<?php echo $company;?>">
-  <span class="error">* <?php echo $companyErr;?></span>
-  <br><br>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+  <table>
+    <tr>
+      <td> Name:</td>
+      <td> <input type="text" name="name" value="<?php echo $name;?>"></td>
+      <td><span class="error">* <?php echo $nameErr;?></span></td>
+    </tr>
+    <tr>
+      <td>Company:</td> 
+      <td><input type="text" name="company" value="<?php echo $company;?>"></td>
+      <td><span class="error">* <?php echo $companyErr;?></span></td>
+    </tr>
+  </table>
   <input type="submit" name="submit" value="Submit">  
 </form>
 
