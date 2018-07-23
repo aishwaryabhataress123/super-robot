@@ -57,7 +57,7 @@ return $data;
 <tr>
   <td>Lead Currency :</td> 
   <td>
-    <select name="lead currency" value="leadcurrency">
+    <select name="leadcurrency" value="leadcurrency">
       <option value="u.s.dollar">U.S. Dollar</option>
       <option value="euro">Euro</option>
     </select>
@@ -66,7 +66,7 @@ return $data;
 <tr>
   <td>Lead Status :</td> 
   <td>
-    <select name="lead status" value="leadstatus">
+    <select name="leadstatus" value="leadstatus">
       <option value="open">Open</option>
       <option value="contacted">Contacted</option>
       <option value="qualified">Qualified</option>
@@ -78,5 +78,14 @@ return $data;
 <input type="submit" name="submit" value="Submit">  
 </form>
 
+ <?php
+ $sql = 'INSERT INTO lead (Name,Company,CurrencyIsocode,Status) VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')';
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute();
+  $rowCount = $stmt->rowCount();
+  $details = $stmt->fetch();
+  print_r ($details);
+  ?>
+  
 </body>
 </html>
