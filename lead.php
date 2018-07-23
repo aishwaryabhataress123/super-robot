@@ -57,12 +57,16 @@ return $data;
   <tr>
     <td>Lead Currency :</td> 
     <td>
-      <select name="lead currency" value="<?php echo $leadcurrency;?>">
+      <select name="leadcurrency" id="leadcurrency">
         <option value="u.s.dollar">U.S. Dollar</option>
         <option value="euro">Euro</option>
       </select>
     </td>
   </tr>
+  if($_POST['submit'])
+{
+$leadcurrency=$_POST['leadcurrency'];
+}
   <tr>
     <td>Lead Status :</td> 
     <td>
