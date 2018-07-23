@@ -9,8 +9,8 @@
 
 <?php
 // define variables and set to empty values
-$nameErr = "";
-$name = "";
+$nameErr = $companyErr = "";
+$name = $company = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -20,6 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
       $nameErr = "Only letters and white space allowed"; 
+    }
+  }
+  if (empty($_POST["company"])) {
+    $companyErr = "Company is required";
+  } else {
+    $company = test_input($_POST["comapny"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$company)) {
+      $companyErr = "Only letters and white space allowed"; 
     }
   }
 }
