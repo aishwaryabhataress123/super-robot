@@ -84,7 +84,8 @@ function test_input($data) {
 echo "<h2>Your Input:</h2>";
 echo $name;
 echo $company;
-echo lead currency;  
+echo $leadcurrency;
+echo $leadstatus;
 ?>
 
 </body>
