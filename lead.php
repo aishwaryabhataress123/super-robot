@@ -80,6 +80,11 @@ return $data;
 </body>
 </html>
  <?php
+$conn = pg_pconnect("dbname=d3ckvlr3hl8sdn");
+if (!$conn) {
+  echo "An error occurred.\n";
+  exit;
+}
  $query = "INSERT INTO lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
   $result= pg_query($query);
   ?>
