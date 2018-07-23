@@ -80,6 +80,6 @@ return $data;
 </body>
 </html>
  <?php
- $query = "INSERT INTO lead (Name,Company,CurrencyIsocode,Status) VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
+ $query = "INSERT INTO lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
   $result= pg_query($query);
   ?>
