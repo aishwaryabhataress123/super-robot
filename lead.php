@@ -61,7 +61,7 @@ return $data;
 <tr>
   <td>Lead Currency :</td> 
   <td>
-    <select id="$leadcurrency" name="leadcurrency" value="leadcurrency">
+    <select name="leadcurrency" value="leadcurrency">
       <option value="u.s.dollar">U.S. Dollar</option>
       <option value="euro">Euro</option>
     </select>
@@ -70,7 +70,7 @@ return $data;
 <tr>
   <td>Lead Status :</td> 
   <td>
-    <select id="$leadstatus" name="leadstatus" value="leadstatus">
+    <select name="leadstatus" value="leadstatus">
       <option value="open">Open</option>
       <option value="contacted">Contacted</option>
       <option value="qualified">Qualified</option>
