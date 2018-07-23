@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>  
+<?php include ('db.php') ?>
 <html>
 <head>
 <style>
