@@ -31,10 +31,6 @@ if (!preg_match("/^[a-zA-Z ]*$/",$company)) {
   $companyErr = "Only letters and white space allowed"; 
 }
 }
-  if($_POST['submit'])
-{
-$leadcurrency=$_POST['leadcurrency'];
-}
 }
 
 function test_input($data) {
@@ -61,7 +57,7 @@ return $data;
 <tr>
   <td>Lead Currency :</td> 
   <td>
-    <select name="leadcurrency" id="leadcurrency">
+    <select name="leadcurrency" value="$leadcurrency">
       <option value="u.s.dollar">U.S. Dollar</option>
       <option value="euro">Euro</option>
     </select>
@@ -70,7 +66,7 @@ return $data;
 <tr>
   <td>Lead Status :</td> 
   <td>
-    <select name="lead status" value="<?php echo $leadstatus;?>">
+    <select name="lead status" value="$leadstatus">
       <option value="open">Open</option>
       <option value="contacted">Contacted</option>
       <option value="qualified">Qualified</option>
@@ -84,16 +80,16 @@ return $data;
 
 <?php
 echo "<h2>Your Input:</h2>";
-echo "Name :"
+echo "Name :";
 echo $name;
 <br>
-echo "Company :"
+echo "Company :";
 echo $company;
 <br>
-echo "Lead Currency :"
+echo "Lead Currency :";
 echo $leadcurrency;
 <br>
-echo "Lead Status :"
+echo "Lead Status :";
 echo $leadstatus;
 ?>
 
