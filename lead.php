@@ -46,6 +46,9 @@ function test_input($data) {
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
+  Company: <input type="text" name="company" value="<?php echo $company;?>">
+  <span class="error">* <?php echo $companyErr;?></span>
+  <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
 
