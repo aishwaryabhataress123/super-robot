@@ -49,13 +49,11 @@ function test_input($data) {
       <td> <input type="text" name="name" value="<?php echo $name;?>"></td>
       <td><span class="error">* <?php echo $nameErr;?></span></td>
     </tr>
-    <br><br>
     <tr>
       <td>Company:</td> 
       <td><input type="text" name="company" value="<?php echo $company;?>"></td>
       <td><span class="error">* <?php echo $companyErr;?></span></td>
     </tr>
-    <br><br>
     <tr>
       <td>Lead Currency :</td> 
       <td>
