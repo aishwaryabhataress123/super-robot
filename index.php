@@ -74,6 +74,11 @@ return $data;
   </td>
 </tr>
 </table>
+
+<input type="submit" name="submit" value="Submit" >  
+</form>
+</body>
+</html>
    <?php
 $db = pg_connect("host=ec2-50-19-86-139.compute-1.amazonaws.com port=5432 dbname=d3ckvlr3hl8sdn user=jwxmbirkvwexoi password=a6be799d393053f292aaf82d4a66641df5a7a28f14ec959bf373097b51bd9bf9");
 if (!$db) {
@@ -81,10 +86,6 @@ if (!$db) {
   exit;
 }
  $query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
-  
+ $result= pg_query($query);
   ?>
-<input type="submit" name="submit" value="Submit" onclick="<?php $result= pg_query($query); ?>">  
-</form>
-</body>
-</html>
 
