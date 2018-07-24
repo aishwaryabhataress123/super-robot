@@ -6,7 +6,7 @@
   <script type="text/javascript">
     function checkstate()
     {
-       alert("<?php echo $state?>");
+       alert($s1);
       if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
       {
         alert ("You selected Maharashtra as state");
@@ -99,6 +99,7 @@ return $data;
 </body>
 </html>
    <?php
+ $s1 = $_POST['state'];
 $db = pg_connect("host=ec2-54-235-177-183.compute-1.amazonaws.com port=5432 dbname=d98o3g9bql0opl user=xkruwpvaqjlakg password=8771612f12079078d75eb98f62f1e9f58dcd8e0cf949d160a90bf4ffbba96982");
 if (!$db) {
   echo "An error occurred.\n";
