@@ -88,6 +88,6 @@ else
 {
   echo "NO error occoured ";
 }
- $query = "INSERT INTO lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
+ $query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
   $result= pg_query($query);
   ?>
