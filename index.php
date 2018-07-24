@@ -6,7 +6,7 @@
   <script type="text/javascript">
     function checkstate()
     {
-      alert('inside');
+      alert('$_POST[state]'+$_POST[state]);
       if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
       {
         alert ("You selected Maharashtra as state");
@@ -94,7 +94,7 @@ return $data;
 </tr>
 </table>
 
-<input type="submit" name="submit" value="Submit" onclick="checkstate();">  
+<input type="submit" name="submit" value="Submit" >  
 </form>
 </body>
 </html>
