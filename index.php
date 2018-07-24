@@ -94,7 +94,7 @@ return $data;
 </tr>
 </table>
 
-<input type="submit" name="submit" value="Submit">  
+<input type="submit" name="submit" value="Submit" onclick="checkstate();">  
 </form>
 </body>
 </html>
