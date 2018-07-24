@@ -87,7 +87,7 @@ if (!$db) {
 }
 //$query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
 //$query = "insert into salesforce.lead (name,status) values ('vish','open');"; 
-$query = "INSERT INTO salesforce.lead(name, company, status)	VALUES ('asa','my comp', 'open');";
+$query = "INSERT INTO salesforce.lead(firstname,lastname, company, status)	VALUES ('sgffhjgh','dsfdgasa','my comp', 'open');";
 $result= pg_query($query);
   ?>
 
