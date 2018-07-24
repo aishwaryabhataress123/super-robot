@@ -85,7 +85,8 @@ if (!$db) {
   echo "An error occurred.\n";
   exit;
 }
- $query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
- $result= pg_query($query);
+//$query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
+$query = "insert into salesforce.lead (name,status) values ('vish','open');"; 
+$result= pg_query($query);
   ?>
 
