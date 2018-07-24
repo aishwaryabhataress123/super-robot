@@ -6,13 +6,13 @@
   <script type="text/javascript">
     function checkstate()
     {
-      if($_POST[state]=="Maharashtra")
+      if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
       {
-        return 'mh.php' ;
+        alert ("You selected Maharashtra as state");
       }
       else
       {
-        return 'nonmh.php' ;
+        alert ("You selected state other than Maharashtra");
       }
     }
   </script>
