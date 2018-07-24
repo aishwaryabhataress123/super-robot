@@ -6,7 +6,7 @@
   <script type="text/javascript">
     function checkstate()
     {
-      alert($s);
+       document.write(<?php echo $state; ?>);
       if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
       {
         alert ("You selected Maharashtra as state");
