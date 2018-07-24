@@ -71,6 +71,7 @@ return $data;
   <td>State:</td> 
   <td><input type="text" name="state" value="<?php echo $state;?>"></td>
   <td><span class="error">* <?php echo $stateErr;?></span></td>
+    var $s = $_POST[state] ;
 </tr>
 <tr>
   <td>Lead Currency :</td> 
@@ -104,7 +105,7 @@ if (!$db) {
   echo "An error occurred.\n";
   exit;
 }
-var $s = $_POST[state] ;
+
 //$query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
 //$query = "insert into salesforce.lead (name,status) values ('vish','open');"; 
 $query = "INSERT INTO salesforce.lead(lastname,state,company, status)	VALUES ('$_POST[name]','$_POST[state]','$_POST[company]', '$_POST[leadstatus]');";
