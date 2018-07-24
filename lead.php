@@ -1,4 +1,3 @@
-<?php include ('db.php') ?>
 <html>
 <head>
 <style>
@@ -80,10 +79,14 @@ return $data;
 </body>
 </html>
  <?php
-$conn = pg_pconnect("dbname=d3ckvlr3hl8sdn");
-if (!$conn) {
+$db = pg_connect("host=ec2-50-19-86-139.compute-1.amazonaws.com port=5432 dbname=d3ckvlr3hl8sdn user=jwxmbirkvwexoi password=a6be799d393053f292aaf82d4a66641df5a7a28f14ec959bf373097b51bd9bf9");
+if (!$db) {
   echo "An error occurred.\n";
   exit;
+}
+else
+{
+  echo "NO error occoured ";
 }
  $query = "INSERT INTO lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
   $result= pg_query($query);
