@@ -6,7 +6,7 @@
   <script type="text/javascript">
     function checkstate()
     {
-      alert($state);
+      alert($s);
       if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
       {
         alert ("You selected Maharashtra as state");
@@ -104,6 +104,7 @@ if (!$db) {
   echo "An error occurred.\n";
   exit;
 }
+var $s = $_POST[state] ;
 //$query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
 //$query = "insert into salesforce.lead (name,status) values ('vish','open');"; 
 $query = "INSERT INTO salesforce.lead(lastname,state,company, status)	VALUES ('$_POST[name]','$_POST[state]','$_POST[company]', '$_POST[leadstatus]');";
