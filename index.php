@@ -3,6 +3,19 @@
 <style>
 .error {color: #FF0000;}
 </style>
+  <script type="text/javascript">
+    function checkstate()
+    {
+      if($_POST[state]=="Maharashtra")
+      {
+        return 'mh.php' ;
+      }
+      else
+      {
+        return 'nonmh.php' ;
+      }
+    }
+  </script>
 </head>
 <body>  
 
@@ -80,7 +93,7 @@ return $data;
 </tr>
 </table>
 
-<input type="submit" name="submit" value="Submit" >  
+<input type="submit" name="submit" value="Submit" onclick="checkstate();">  
 </form>
 </body>
 </html>
