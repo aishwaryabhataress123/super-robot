@@ -80,7 +80,7 @@ return $data;
 </body>
 </html>
    <?php
-$db = pg_connect("host=ec2-50-19-86-139.compute-1.amazonaws.com port=5432 dbname=d3ckvlr3hl8sdn user=jwxmbirkvwexoi password=a6be799d393053f292aaf82d4a66641df5a7a28f14ec959bf373097b51bd9bf9");
+$db = pg_connect("host=ec2-54-235-177-183.compute-1.amazonaws.com port=5432 dbname=d98o3g9bql0opl user=xkruwpvaqjlakg password=8771612f12079078d75eb98f62f1e9f58dcd8e0cf949d160a90bf4ffbba96982");
 if (!$db) {
   echo "An error occurred.\n";
   exit;
