@@ -55,7 +55,7 @@ return $data;
 ?>
 
 <p><span class="error">* required field</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="checkstate();"> 
+<form method="post"  onsubmit="checkstate();"> 
 <table>
 <tr>
   <td> Name:</td>
