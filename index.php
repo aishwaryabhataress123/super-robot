@@ -71,7 +71,7 @@ return $data;
   <td>State:</td> 
   <td><input type="text" name="state" value="<?php echo $state;?>"></td>
   <td><span class="error">* <?php echo $stateErr;?></span></td>
-    var $s = $_POST[state] ;
+   <?php var $s = $_POST[state] ; ?>
 </tr>
 <tr>
   <td>Lead Currency :</td> 
