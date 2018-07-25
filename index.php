@@ -109,7 +109,8 @@ if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 $s1 = $_GET['state'];
  
 }
- if ($s1=="maharashtra")
+echo 
+ if (strcmp['$s1','maharashtra']==1)
   {
     echo "You entered state as Maharashtra " ; 
   }
