@@ -116,8 +116,7 @@ if(isset($_POST[state]))
  if ($s1 == "maharashtra" OR $s1 == "Maharashtra")
     echo "State : Maharashtra" ; 
   else
-    echo "State : Other than Maharashtra";
-  <br>
+    echo "State : Other than Maharashtra \n";
     echo "You Entered ". $s1;
 }  
 ?>
