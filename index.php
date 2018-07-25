@@ -8,16 +8,6 @@
     {
      // var state = '<?php echo $s1?>';
       // alert(state);
-      document.write(<?php echo $s1; ?>);
-
-      if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
-      {
-        alert ("You selected Maharashtra as state");
-      }
-      else
-      {
-        alert ("You selected state other than Maharashtra");
-      }
     }
   </script>
 </head>
@@ -117,6 +107,14 @@ $result= pg_query($query);
 if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 
 $s1 = $_GET['state'];
+  if ($s1=="maharashtra")
+  {
+    echo "You entered state as Maharashtra " ; 
+  }
+  else
+  {
+    echo "You entered state other than maharashtra " ;
+  }
 }
   ?>
 
