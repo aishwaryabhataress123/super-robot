@@ -107,7 +107,9 @@ $result= pg_query($query);
 if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 
 $s1 = $_GET['state'];
-  if ($s1=="maharashtra")
+ 
+}
+ if ($s1=="maharashtra")
   {
     echo "You entered state as Maharashtra " ; 
   }
@@ -115,7 +117,6 @@ $s1 = $_GET['state'];
   {
     echo "You entered state other than maharashtra " ;
   }
-}
   ?>
 
 
