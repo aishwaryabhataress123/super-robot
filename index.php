@@ -6,8 +6,10 @@
   <script type="text/javascript">
    function checkstate()
     {
-      var state = '<?php echo $s1?>';
+     // var state = '<?php echo $s1?>';
       // alert(state);
+      document.write(<?php echo $s1; ?>);
+
       if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
       {
         alert ("You selected Maharashtra as state");
@@ -117,6 +119,5 @@ if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 $s1 = $_GET['state'];
 }
   ?>
-<script>
-document.write(<?php echo $s1; ?>);
-</script>
+
+
