@@ -118,8 +118,8 @@ if(isset($_POST[state]))
   else
   {
     echo "State : Other than Maharashtra ";
-    nl2br();
-    echo "You Entered ". $s1;
+    echo nl2br("You Entered ". $s1);
+     
   }
  }  
 ?>
