@@ -110,14 +110,10 @@ $s1 = $_GET['state'];
  
 }
 echo 'the state you entered is ' . $s1;
- /*if ($s1 = "maharashtra")
-  {
-    echo "You entered state as " . $s1 ; 
-  }
+ if ($s1 == "maharashtra")
+    echo "inside" ; 
   else
-  {
-    echo "You entered state other than maharashtra that is " . $s1 ;
-  }*/
+    echo "outside";
   ?>
 
 
