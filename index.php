@@ -113,7 +113,7 @@ $s1 = $_GET['state'];
 //echo 'the state you entered is ' . $s1;
 if(isset($_POST[state]))
 {
- if ($s1 == "maharashtra")
+ if ($s1 == "maharashtra" OR $s1 == "Maharashtra")
     echo "State : Maharashtra" ; 
   else
     echo "State : Other than Maharashtra";
