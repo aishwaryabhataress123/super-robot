@@ -112,7 +112,7 @@ $query = "INSERT INTO salesforce.lead(lastname,state,company, status)	VALUES ('$
 $result= pg_query($query);
 
 $s1 = $_GET[state];
-echo 'The state you entered is '.$s1 ;
+echo 'The state you entered is '. $s1 ;
 
   ?>
 
