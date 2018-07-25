@@ -110,7 +110,7 @@ $s1 = $_GET['state'];
  
 }
 echo 
- if (strcmp['$s1','maharashtra']==1)
+ if ($s1 = "maharashtra")
   {
     echo "You entered state as Maharashtra " ; 
   }
