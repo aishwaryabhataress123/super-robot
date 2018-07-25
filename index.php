@@ -109,14 +109,15 @@ if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 $s1 = $_GET['state'];
  
 }
- if ($s1 = "maharashtra")
+echo 'the state you entered is ' . $s1;
+ /*if ($s1 = "maharashtra")
   {
     echo "You entered state as " . $s1 ; 
   }
   else
   {
     echo "You entered state other than maharashtra that is " . $s1 ;
-  }
+  }*/
   ?>
 
 
