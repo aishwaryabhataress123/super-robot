@@ -4,7 +4,7 @@
 .error {color: #FF0000;}
 </style>
   <script type="text/javascript">
-    function checkstate()
+  /*  function checkstate()
     {
        alert(<?php echo $s1 ?>);
       if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
@@ -15,7 +15,7 @@
       {
         alert ("You selected state other than Maharashtra");
       }
-    }
+    }*/
   </script>
 </head>
 <body>  
@@ -110,6 +110,9 @@ if (!$db) {
 //$query = "insert into salesforce.lead (name,status) values ('vish','open');"; 
 $query = "INSERT INTO salesforce.lead(lastname,state,company, status)	VALUES ('$_POST[name]','$_POST[state]','$_POST[company]', '$_POST[leadstatus]');";
 $result= pg_query($query);
+
+$s1 = $_GET[state];
+echo 'The state you entered is '.$s1 ;
 
   ?>
 
