@@ -4,9 +4,9 @@
 .error {color: #FF0000;}
 </style>
   <script type="text/javascript">
-  /*  function checkstate()
+   function checkstate()
     {
-       alert(<?php echo $s1 ?>);
+       alert($s1);
       if($_POST[state]=="Maharashtra" ||$_POST[state]=="maharashtra" )
       {
         alert ("You selected Maharashtra as state");
@@ -15,7 +15,7 @@
       {
         alert ("You selected state other than Maharashtra");
       }
-    }*/
+    }
   </script>
 </head>
 <body>  
@@ -115,7 +115,6 @@ if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 
 $s1 = $_GET['state'];
 }
-echo 'The state you entered is '. $s1 ;
 
   ?>
 
