@@ -6,6 +6,7 @@
   <script type="text/javascript">
    function checkstate()
     {
+      
      // var state = '<?php echo $s1?>';
       // alert(state);
     }
@@ -109,11 +110,11 @@ if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 $s1 = $_GET['state'];
  
 }
-echo 'the state you entered is ' . $s1;
+//echo 'the state you entered is ' . $s1;
  if ($s1 == "maharashtra")
-    echo "inside" ; 
+    echo "State : Maharashtra" ; 
   else
-    echo "outside";
+    echo "State : Other than Maharashtra";
   ?>
 
 
