@@ -111,7 +111,10 @@ if (!$db) {
 $query = "INSERT INTO salesforce.lead(lastname,state,company, status)	VALUES ('$_POST[name]','$_POST[state]','$_POST[company]', '$_POST[leadstatus]');";
 $result= pg_query($query);
 
-$s1 = $_GET[state];
+if ( filter_has_var( INPUT_GET, 'submit' ) ) {
+
+$s1 = $_GET['state'];
+}
 echo 'The state you entered is '. $s1 ;
 
   ?>
