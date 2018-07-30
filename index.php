@@ -93,7 +93,6 @@ return $data;
 </body>
 </html>
    <?php
- $s1 = $_POST['state'];
 $db = pg_connect("host=ec2-54-235-177-183.compute-1.amazonaws.com port=5432 dbname=d98o3g9bql0opl user=xkruwpvaqjlakg password=8771612f12079078d75eb98f62f1e9f58dcd8e0cf949d160a90bf4ffbba96982");
 if (!$db) {
   echo "An error occurred.\n";
@@ -102,10 +101,10 @@ if (!$db) {
 
 //$query = "INSERT INTO salesforce.lead VALUES ('$_POST[name]','$_POST[company]','$_POST[leadcurrency]','$_POST[leadstatus]')";
 //$query = "insert into salesforce.lead (name,status) values ('vish','open');"; 
-$query = "INSERT INTO salesforce.lead(lastname,state,company, status)	VALUES ('$_POST[name]','$_POST[state]','$_POST[company]', '$_POST[leadstatus]');";
-$result= pg_query($query);
+//$query = "INSERT INTO salesforce.lead(lastname,state,company, status)	VALUES ('$_POST[name]','$_POST[state]','$_POST[company]', '$_POST[leadstatus]');";
+//$result= pg_query($query);
 
-if ( filter_has_var( INPUT_GET, 'submit' ) ) {
+/*if ( filter_has_var( INPUT_GET, 'submit' ) ) {
 
 $s1 = $_GET['state'];
  
@@ -121,7 +120,9 @@ if(isset($_POST[state]))
     echo nl2br("You Entered ". $s1);
      
   }
- }  
+ }*/
+$fsd = $_POST[name].$_POST[state];
+  echo "the name you entered is ". $fsd;
 ?>
 
 
